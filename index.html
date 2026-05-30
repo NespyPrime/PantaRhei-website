@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +9,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md fixed-top">
+
         <div class="container-xxl">
 
             <!-- Brand -->
@@ -27,55 +34,63 @@
                 PANTA RHEI
             </a>
 
-            <!-- Mobile: cart + hamburger -->
-            <div class="d-flex align-items-center gap-3 d-md-none">
+            <!-- Mobile -->
+            <div class="d-flex align-items-center gap-2 ms-auto d-md-none">
 
-                <a href="#" class="icon-link">
-                    <i class="bi bi-bag"></i>
+                <!-- Cart -->
+                <a href="#" class="text-white text-decoration-none fs-4">
+                    <i class="bi bi-cart2"></i>
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <!-- Hamburger -->
+                <button
+                    class="btn p-0 border-0 shadow-none d-flex align-items-center justify-content-center"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
 
-                    <a href="#" class="icon-link">
-                        <i class="bi bi-list text-white fs-1"></i>
-                    </a>
+                    <i class="bi bi-list text-white fs-1"></i>
                 </button>
+
             </div>
 
-            <!-- Desktop menu -->
+            <!-- Desktop Menu -->
             <div class="collapse navbar-collapse justify-content-center d-none d-md-flex">
 
                 <ul class="navbar-nav gap-4">
 
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">HOME</a>
+                        <a href="#" class="nav-link">
+                            HOME
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#collection" class="nav-link">
+                        <a href="#" class="nav-link">
                             COLLECTION
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#shop" class="nav-link">
+                        <a href="#" class="nav-link">
                             SHOP
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#story" class="nav-link">
+                        <a href="#" class="nav-link">
                             STORY
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#drops" class="nav-link">
+                        <a href="#" class="nav-link">
                             DROPS
                         </a>
                     </li>
 
                 </ul>
+
             </div>
 
             <!-- Desktop Icons -->
@@ -96,16 +111,23 @@
             </div>
 
         </div>
+
     </nav>
 
-    <!-- Mobile Offcanvas -->
-    <div class="offcanvas offcanvas-end glass-sidebar text-white" tabindex="-1" id="mobileMenu">
+    <!-- MOBILE MENU -->
+    <div class="offcanvas offcanvas-end glass-sidebar text-white"
+         tabindex="-1"
+         id="mobileMenu">
 
         <div class="offcanvas-header">
+
             <h5>PANTA RHEI</h5>
 
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+            <button type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas">
             </button>
+
         </div>
 
         <div class="offcanvas-body">
@@ -113,31 +135,31 @@
             <ul class="navbar-nav text-center gap-3">
 
                 <li>
-                    <a href="#home" class="nav-link">
+                    <a href="#" class="nav-link">
                         HOME
                     </a>
                 </li>
 
                 <li>
-                    <a href="#collection" class="nav-link">
+                    <a href="#" class="nav-link">
                         COLLECTION
                     </a>
                 </li>
 
                 <li>
-                    <a href="#shop" class="nav-link">
+                    <a href="#" class="nav-link">
                         SHOP
                     </a>
                 </li>
 
                 <li>
-                    <a href="#story" class="nav-link">
+                    <a href="#" class="nav-link">
                         STORY
                     </a>
                 </li>
 
                 <li>
-                    <a href="#drops" class="nav-link">
+                    <a href="#" class="nav-link">
                         DROPS
                     </a>
                 </li>
@@ -145,35 +167,59 @@
             </ul>
 
         </div>
+
     </div>
 
-    <!-- Hero section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
+    <!-- HERO -->
+<section class="hero d-flex align-items-center">
 
-        <div class="hero-content">
-            <h1 class="hero-title">Everything Flows</h1>
-            <br>
-            <p>More than fashion — a movement of confidence, creativity, 
-               <br> ambition, and self-expression.</p>
-            <div class="hero-buttons">
-    <a href="#" class="btn-shop">
-        SHOP NOW
-        <i class="bi bi-arrow-right"></i>
-    </a>
+    <div class="container">
 
-    <a href="#" class="btn-explore">
-        EXPLORE
-     </a>
+        <div class="row justify-content-center text-center">
+
+            <div class="col-12 col-md-10 col-lg-8">
+
+                <h1 class="hero-title">
+                    Everything Flows
+                </h1>
+
+                <p class="hero-text mx-auto">
+                    More than fashion — a movement of confidence,
+                    creativity, ambition, and self-expression.
+                </p>
+
+                <!-- Buttons -->
+                <div class="hero-buttons d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+
+                    <a href="#" class="btn-shop">
+                        SHOP NOW
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+
+                    <a href="#" class="btn-explore">
+                        EXPLORE
+                    </a>
+
+                </div>
+
+                <!-- Floating Mouse -->
+                <div class="logo-float mt-5">
+                    <i class="bi bi-mouse fs-1"></i>
+                </div>
+
+            </div>
+
         </div>
-       <div class="hero-logo logo-float">
-    <i class="bi bi-mouse"></i>
-</div>
-    </section>
+
+    </div>
+
+</section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
 
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
 </html>
