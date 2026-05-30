@@ -51,8 +51,7 @@ body {
 .icon-link {
     color: white;
     font-size: 1.2rem;
-    transition: transform 0.3s ease,
-                color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon-link:hover {
@@ -82,7 +81,13 @@ body {
     font-size:1.5rem;
     text-decoration:none;
     line-height:1;
-    margin-top:2px;
+    margin-top:-3.4px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cart-mobile:hover {
+    color: #C8A96B !important;
+    transform: translateY(-3px);
 }
 
 /* Hamburger button */
@@ -90,12 +95,16 @@ body {
     border:none !important;
     background:transparent !important;
     padding:0 !important;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
+    transition: transform 0.3s ease, color 0.3s ease;
     height:40px;
+}
+
+.cart-toggler:hover {
+    color: #C8A96B !important;
+    transform: translateY(-3px);
 }
 
 /* Hamburger icon */
@@ -208,14 +217,12 @@ body {
 @media (max-width: 768px) {
 
     .hero-buttons {
-        .hero-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
     margin-top: 95px; /* pushes buttons down */
     flex-wrap: nowrap;
-}
     }
 
     .btn-shop,
@@ -223,6 +230,10 @@ body {
         padding: 10px 22px; /* smaller buttons */
         font-size: 0.85rem;
         border-radius: 40px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: nowrap;
     }
 
     .btn-shop i {
@@ -279,13 +290,11 @@ body {
 .logo-float {
     display: inline-block;
     animation: floatLogo 3s ease-in-out infinite;
-    filter:
-        grayscale(100%)
-        brightness(70%)
-        drop-shadow(0 10px 15px rgba(255,255,255,0.15));
-
+    filter: grayscale(100%) brightness(120%);
+    color: white; 
     font-size: 2.5rem;
     margin-top: 60px;
+    width:120px;
 }
 
 @keyframes floatLogo {
