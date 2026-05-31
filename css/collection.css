@@ -57,7 +57,7 @@ body {
 }
 .card-subtitle {
   color: white;
-  font-size: 1.1rem;
+  font-size: clamp(3rem, 10vw, 9rem);
   margin-bottom: 10px;
 }
 .card-price {
