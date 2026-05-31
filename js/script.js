@@ -10,3 +10,20 @@ window.addEventListener('scroll', () => {
     }
 
 });
+
+// pop ofcanvas
+document.querySelectorAll('#mobileMenu .nav-link')
+.forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        const offcanvasElement =
+            document.getElementById('mobileMenu');
+
+        const offcanvas =
+            bootstrap.Offcanvas.getInstance(offcanvasElement);
+
+        offcanvas.hide();
+    });
+
+});
