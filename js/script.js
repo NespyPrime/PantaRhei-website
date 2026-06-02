@@ -39,20 +39,24 @@ const startCounter = (counter) => {
     const speed = target / 100;
 
     const updateCount = () => {
-        count += speed;
+    count += speed;
 
-        if (count < target) {
-            counter.innerText = isDecimal
-                ? count.toFixed(1)
-                : Math.floor(count);
+    if (count < target) {
+        counter.innerText = isDecimal
+            ? count.toFixed(1)
+            : Math.floor(count);
 
-            requestAnimationFrame(updateCount);
-        } else {
-            counter.innerText = isDecimal
-                ? target.toFixed(1)
-                : target + "+";
-        }
-    };
+        requestAnimationFrame(updateCount);
+
+    } else {
+
+        const symbol = counter.dataset.symbol || "+";
+
+        counter.innerText = isDecimal
+            ? target.toFixed(1)
+            : target + symbol;
+    }
+};
 
     updateCount();
 };
