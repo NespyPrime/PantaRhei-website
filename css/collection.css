@@ -44,6 +44,7 @@ body {
 }
 .card-img-top:hover {
   transform: scale(1.05);
+  transform: scale(1.08);
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
