@@ -359,27 +359,27 @@ body {
 }
 
 .col:nth-child(1) .card {
-    transition-delay: 0.1s;
-}
-
-.col:nth-child(2) .card {
     transition-delay: 0.2s;
 }
 
-.col:nth-child(3) .card {
+.col:nth-child(2) .card {
     transition-delay: 0.3s;
 }
 
-.col:nth-child(4) .card {
+.col:nth-child(3) .card {
     transition-delay: 0.4s;
 }
 
-.col:nth-child(5) .card {
+.col:nth-child(4) .card {
     transition-delay: 0.5s;
 }
 
-.col:nth-child(6) .card {
+.col:nth-child(5) .card {
     transition-delay: 0.6s;
+}
+
+.col:nth-child(6) .card {
+    transition-delay: 0.7s;
 }
 
 /* ==========================
