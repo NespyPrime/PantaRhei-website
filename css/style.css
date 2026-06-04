@@ -306,6 +306,82 @@ body {
     }
 }
 
+
+/* Animate On Scroll */
+/* Base animation */
+.reveal {
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+/* LEFT */
+.reveal-left {
+    transform: translateX(-100px);
+}
+
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* RIGHT */
+.reveal-right {
+    transform: translateX(100px);
+}
+
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* UP */
+.reveal-up {
+    transform: translateY(80px);
+}
+
+.reveal-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* DOWN */
+.reveal-down {
+    transform: translateY(-80px);
+}
+
+.reveal-down.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card {
+    transition-delay: 0.1s;
+}
+
+.col:nth-child(1) .card {
+    transition-delay: 0.1s;
+}
+
+.col:nth-child(2) .card {
+    transition-delay: 0.2s;
+}
+
+.col:nth-child(3) .card {
+    transition-delay: 0.3s;
+}
+
+.col:nth-child(4) .card {
+    transition-delay: 0.4s;
+}
+
+.col:nth-child(5) .card {
+    transition-delay: 0.5s;
+}
+
+.col:nth-child(6) .card {
+    transition-delay: 0.6s;
+}
+
 /* ==========================
    RESPONSIVE
 ========================== */
@@ -442,3 +518,5 @@ body {
         font-size: 1.8rem;
     }
 }
+
+
